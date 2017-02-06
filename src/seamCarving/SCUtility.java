@@ -1,3 +1,4 @@
+package seamCarving;
 /******************************************************************************
  *  Compilation:  javac SCUtility.java
  *  Execution:    none
@@ -97,7 +98,7 @@ public class SCUtility {
             for (int row = 0; row < height; row++)
                 overlaid.set(col, row, picture.get(col, row));
         
-
+        
         //if horizontal seam, then set one pixel in every column
         if (horizontal) {
             for (int col = 0; col < width; col++)

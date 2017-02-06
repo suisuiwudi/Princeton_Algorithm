@@ -1,3 +1,4 @@
+package seamCarving;
 /******************************************************************************
  *  Compilation:  javac ResizeDemo.java
  *  Execution:    java ResizeDemo input.png columnsToRemove rowsToRemove
@@ -29,15 +30,19 @@ public class ResizeDemo {
         SeamCarver sc = new SeamCarver(inputImg);
 
         Stopwatch sw = new Stopwatch();
-
+        
         for (int i = 0; i < removeRows; i++) {
             int[] horizontalSeam = sc.findHorizontalSeam();
+            StdOut.println("Resizing time: " + sw.elapsedTime() + " seconds.");
             sc.removeHorizontalSeam(horizontalSeam);
+            StdOut.println("Resizing time: " + sw.elapsedTime() + " seconds.");
         }
-
+        StdOut.println("Resizing time: " + sw.elapsedTime() + " seconds.");
         for (int i = 0; i < removeColumns; i++) {
             int[] verticalSeam = sc.findVerticalSeam();
+            StdOut.println("Resizing time: " + sw.elapsedTime() + " seconds.");
             sc.removeVerticalSeam(verticalSeam);
+            StdOut.println("Resizing time: " + sw.elapsedTime() + " seconds.");
         }
         Picture outputImg = sc.picture();
 

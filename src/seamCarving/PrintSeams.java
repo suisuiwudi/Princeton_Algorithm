@@ -1,3 +1,4 @@
+package seamCarving;
 /******************************************************************************
  *  Compilation:  javac PrintSeams.java
  *  Execution:    java PrintSeams input.png

@@ -1,3 +1,4 @@
+package seamCarving;
 /******************************************************************************
  *  Compilation:  javac PrintEnergy.java
  *  Execution:    java PrintEnergy input.png

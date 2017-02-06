@@ -1,3 +1,4 @@
+package seamCarving;
 /******************************************************************************
  *  Compilation:  javac ShowEnergy.java
  *  Execution:    java ShowEnergy input.png

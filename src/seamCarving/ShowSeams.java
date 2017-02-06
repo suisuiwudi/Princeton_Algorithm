@@ -1,3 +1,4 @@
+package seamCarving;
 /******************************************************************************
  *  Compilation:  javac ShowSeams.java
  *  Execution:    java ShowSeams input.png
