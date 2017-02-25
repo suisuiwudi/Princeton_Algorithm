@@ -146,10 +146,6 @@ public class BaseballElimination {
 			}
 		}
 
-		for (int i = 0; i < teamNums; i++)
-			if (i != teamId) {
-
-			}
 		FordFulkerson maxFlowUsingFFk = new FordFulkerson(g, 0, totVertices - 1);
 		againstVertices = 0;
 		for (int i = 0; i < teamNums; i++) {
